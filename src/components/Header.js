@@ -3,10 +3,12 @@ import logo from "../assets/pk_logo.jpg";
 const Header = ({ children, theme, setTheme }) => {
   return (
     <header>
-      <span className="logo">
-        <img src={logo} alt="logoPK" />
-        <span>{children}</span>
-      </span>
+      <a href="https://patelot.de/">
+        <span className="logo">
+          <img src={logo} alt="logoPK" />
+          <span>{children}</span>
+        </span>
+      </a>
       <span className="themeSelector">
         <span
           onClick={() => setTheme("light")}

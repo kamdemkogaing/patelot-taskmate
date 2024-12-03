@@ -71,7 +71,7 @@ header .themeSelector .activeTheme {
   padding: 5px 5px;
   border: 1px solid #eaeaea;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .addTask form input:focus {
@@ -170,6 +170,7 @@ header .themeSelector .activeTheme {
 .showTask li .name {
   font-size: 18px;
   padding-bottom: 5px;
+  word-break: break-word;
 }
 
 .showTask li .time {
@@ -192,5 +193,16 @@ header .themeSelector .activeTheme {
 @media only screen and (max-width: 800px) {
   .showTask li {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 580px) {
+  .addTask form {
+    display: block;
+    gap: 7px;
+  }
+  .addTask form button {
+    width: 100%;
+    margin-top: 15px;
   }
 }
